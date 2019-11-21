@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Popular Movies</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="stylesheet" href="css/style.css">
+
+<script>
+ $(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+ }); 
+</script>
+<script language="Javascript" type="text/Javascript">
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api.themoviedb.org/3/movie/popular?page=1&language=en-US&api_key=7d0dc7a7d578c00a5cc6ff1fc867d41f",
+  "method": "GET",
+  "headers": {},
+  "data": "{}"
+}
+var link="http://image.tmdb.org/t/p/w185/";
+$.ajax(settings).done(function (response) {
+  console.log(response);
+  document.getElementById("img1").src=link+response .results[1].poster_path;
+  document.getElementById("head1").innerHTML= response .results[1].title;
+  document.getElementById("desc1").innerHTML= response .results[1].overview;
+  document.getElementById("rd1").innerHTML="Release Date:"+response .results[1].release_date;
+
+  document.getElementById("img2").src=link+response .results[0].poster_path;
+  document.getElementById("head2").innerHTML= response .results[0].title;
+  document.getElementById("desc2").innerHTML= response .results[0].overview;
+  document.getElementById("rd2").innerHTML="Release Date:"+response .results[0].release_date;
+
+  document.getElementById("img3").src=link+response .results[3].poster_path;
+  document.getElementById("head3").innerHTML= response .results[3].title;
+  document.getElementById("desc3").innerHTML= response .results[3].overview;
+  document.getElementById("rd3").innerHTML="Release Date:"+response .results[3].release_date;
+
+  document.getElementById("img4").src=link+response .results[5].poster_path;
+  document.getElementById("head4").innerHTML= response .results[5].title;
+  document.getElementById("desc4").innerHTML= response .results[5].overview;
+  document.getElementById("rd4").innerHTML="Release Date:"+response .results[5].release_date;
+
+  document.getElementById("img5").src=link+response .results[6].poster_path;
+  document.getElementById("head5").innerHTML= response .results[6].title;
+  document.getElementById("desc5").innerHTML= response .results[6].overview;
+  document.getElementById("rd5").innerHTML="Release Date:"+response .results[6].release_date;
+});
+
+</script>
+</head>
+<body class="" id="top">
+
+<div class="main">
+<header>
+  <div class="container_12">
+    <div class="grid_12">
+      <h1 class="logo">
+        <a href="popular.html">POPULAR MOVIES<span></span>
+        </a>
+      </h1>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <section id="stuck_container">
+
+    <div class="container_12">
+        <div class="grid_12">          
+          <div class="navigation ">
+            <nav>
+              <ul class="sf-menu">
+                  <li class="current"><a href="index.html" target="_blank">Home</a></li>
+                  <li><a href="popular.html">Popular Movies</a></li>
+                  <li><a href="trending.html" target="_blank">Trending</a></li>
+                  <li><a href="topRated.html" target="_blank">Top rated</a></li>
+                  <li><a href="upcoming.html" target="_blank">Upcoming</a></li>
+                  <li><a href="#c11" >Contacts</a></li>
+             </ul>
+            </nav>
+            <div class="clear"></div>
+          </div>       
+         <div class="clear"></div>  
+     </div> 
+     <div class="clear"></div>
+    </div> 
+  </section>
+</header>
+
+<section id="content" class="inset__1"><div class="ic">More Website Templates @ TemplateMonster.com - October 06, 2014!</div>
+  <div class="container_12">
+    <div class="grid_6">
+      <div class="block-2">
+        <img id="img1">
+        <div class="extra_wrapper">
+          <h4 class="color1" id="head1"><a href="#"></a></h4>
+          <p class="color1" id="desc1"> </p>
+          <p id="rd1"></p>
+        
+        </div>
+      </div>
+    </div>
+    <div class="grid_6">
+      <div class="block-2">
+          <img id="img2">
+          <div class="extra_wrapper">
+            <h4 class="color1" id="head2"><a href="#"></a></h4>
+            <p class="color1" id="desc2"> </p>
+            <p id="rd2"></p>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="grid_6">
+      <div class="block-2">
+          <img id="img3">
+          <div class="extra_wrapper">
+            <h4 class="color1" id="head3"><a href="#"></a></h4>
+            <p class="color1" id="desc3"> </p>
+            <p id="rd3"></p>
+        </div>
+      </div>
+    </div>
+    <div class="grid_6">
+      <div class="block-2">
+          <img id="img4">
+          <div class="extra_wrapper">
+            <h4 class="color1" id="head4"><a href="#"></a></h4>
+            <p class="color1" id="desc4"> </p>
+            <p id="rd4"></p>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="grid_6">
+      <div class="block-2">
+          <img id="img5">
+          <div class="extra_wrapper">
+            <h4 class="color1" id="head5"><a href="#"></a></h4>
+            <p class="color1" id="desc5"> </p>
+            <p id="rd5"></p>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    
+  </div>
+</section>
+</section>
+<div class="footer-top" id="c11">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="sep-1"></div>
+    </div>
+    <div class="grid_4">
+      <address class="address-1"> <div class="fa fa-home"></div>
+        <a href="file.html" target="_blank" >Click here for Resume</a>
+    </div>
+    <div class="grid_3">
+      <a href="#" class="mail-1"><span class="fa fa-envelope"></span>anjalisharma060400@gmail.com</a>
+    </div>
+    <div class="grid_4 fright">
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/anjali-sharma-2050b7193">LinkedIn</a>
+        <a href="https://www.instagram.com/anjalii0604/?hl=en">Instagram</a>
+        <a href="#">google+</a>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+</div>
+<footer id="footer">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="sub-copy">POPULAR MOVIES &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a> <br> Website designed by Anjali Sharma</div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</footer>
+<a href="#" id="toTop" class="fa fa-angle-up"></a>
+</body>
+</html>

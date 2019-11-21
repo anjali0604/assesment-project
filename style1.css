@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 1500px;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+  width: 100%;
+  padding: 50px;
+  color: white;
+}
+.menu {
+  margin-top: 10px;
+  color: white;
+}
+.menu > li {
+  display: inline;
+  margin-right: 50px;
+  color: white;
+}
+.id1{
+  margin-top: 250px;
+  margin-left: 150px;
+  font-size:40px;
+  margin-right: 700px;
+  color: white
+}
+#first{
+  margin-top: 200px;
+  margin-left: 150px;
+  font-size:30px;
+  margin-right: 700px;
+}
+#third{
+  margin-top: 250px;
+  margin-left: 150px;
+  font-size:30px;
+  margin-right: 700px;
+}
+
+#id3{
+  margin-top: 350px;
+  margin-left: 100px;
+  font-size:25px;
+  margin-right: 100px;
+}
+.buttonn{
+  background-color: #191379;
+  font-size: 20px;
+  margin: 4px 2px;
+  padding: 7px 14px;
+  color:white;
+}
+
+#second{
+  position: relative;
+  right: 50px;
+  bottom: 20px;
+  left: 1150px;
+  font-size: 25px;
+}
+body{
+  background: url("code12.jpg");
+  background-repeat: repeat-y;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-google {
+  background: #007bb5;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.menu {
+  margin-top: 15px;
+}
+
+.menu > li {
+  display: inline;
+  margin-right: 50px;
+}
+
+.menu > li:last-of-type {
+  margin-right: 0;
+}
+.features-menu {
+  display: flex;
+  flex-direction: column;
+  background: #CD23CF;
+  border-radius: 5px;
+  padding-top: 60px;
+ position: absolute;      /* Add these */
+  top: -25px;
+  left: -30px;
+}
+
+.features-menu li {
+  list-style: none;
+  border-bottom: 1px solid #FFF;
+
+  padding: 0 40px 10px 20px;
+  margin: 10px;
+}
+
+.features-menu li:last-of-type {
+  border-bottom: none;
+}
